@@ -1,0 +1,36 @@
+# 📉 Loss Function (Basic Concept)
+
+## What is Loss Function?
+
+Loss function measures how much the model prediction is wrong compared to the actual value.
+
+Small loss → Good prediction
+Large loss → Bad prediction
+
+Model training process:
+Predict → Calculate Loss → Update Weights → Improve Prediction
+
+---
+
+## Example (Customer Churn)
+
+Actual = 1 (Customer leaves)
+Prediction = 0.9 → Small loss (Correct)
+Prediction = 0.1 → Large loss (Wrong)
+
+---
+
+## Loss Function Used in This Project
+
+We use **Binary Crossentropy** because output is binary:
+Churn = 1
+No Churn = 0
+
+It checks how close the predicted probability is to the real answer.
+
+---
+
+## Key Point
+
+Loss Function tells the model **how bad it is**.
+Optimizer tells the model **how to improve**.
