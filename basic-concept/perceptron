@@ -1,0 +1,86 @@
+# 🧠 Perceptron Basics (Deep Learning Concept)
+
+## 📌 What is Perceptron?
+
+The Perceptron is the **simplest neural network model** and the foundation of Deep Learning.
+It works like a single artificial neuron that decides whether an input belongs to a class or not.
+
+👉 It is mainly used for **Binary Classification** (Yes/No, True/False, Churn/Not Churn)
+
+Example in this project:
+Predict → Will customer leave the company?
+
+---
+
+## ⚙️ How Perceptron Works
+
+A perceptron takes inputs, multiplies them with weights, adds bias and passes result through an activation function.
+
+### Mathematical Formula
+
+z = w1x1 + w2x2 + w3x3 + ... + b
+
+Output:
+If z ≥ 0 → 1 (Positive Class)
+If z < 0 → 0 (Negative Class)
+
+---
+
+## 🧩 Components of Perceptron
+
+* Inputs (x) → Customer features (tenure, charges, contract)
+* Weights (w) → Importance of each feature
+* Bias (b) → Threshold adjuster
+* Activation Function → Decision maker (Step Function)
+
+---
+
+## 📊 Simple Example
+
+Suppose we predict churn using 2 features:
+
+* Monthly Charges
+* Tenure
+
+Weights:
+w1 = 0.6
+w2 = -0.4
+b = -2
+
+Customer Data:
+Monthly Charges = 80
+Tenure = 12
+
+Calculation:
+z = (0.6 × 80) + (-0.4 × 12) - 2
+z = 48 - 4.8 - 2
+z = 41.2
+
+Since z > 0 → Output = 1 → Customer will churn
+
+---
+
+## 📉 Limitation of Perceptron
+
+Perceptron can only solve **linearly separable problems**.
+It fails when data is complex (real world customer behavior is complex).
+
+That is why we use:
+➡️ Multi-Layer Neural Network (Deep Learning)
+
+---
+
+## 🔗 Relation to This Project
+
+Customer churn prediction is not simple linear behavior.
+So instead of single perceptron we use **multiple neurons (ANN)** which learn complex patterns from customer data.
+
+Perceptron = 1 neuron
+Deep Learning = many neurons working together
+
+---
+
+## 🎯 Key Takeaway
+
+Perceptron is the building block of neural networks.
+Understanding perceptron helps understand how Deep Learning models make decisions.
